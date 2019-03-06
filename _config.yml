@@ -1,26 +1,21 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+title: unkovsky.space
+github_username: niihelium
+github_url: http://github.com/niihelium
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+year: 2019
+description: Nikita Unkovsky
+url: http://unkovsky.space
+encoding: UTF-8
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+kramdown:
+  input: GFM
+  hard_wrap: false
+future: true
+jailed: false
+gfm_quirks: paragraph_end
+sass:
+  sass_dir: ./assets/css
 
-# Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
-
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+paginate: 6
+paginate_path: /page/:num/
