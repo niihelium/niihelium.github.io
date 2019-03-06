@@ -1,6 +1,34 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+pagination: 
+  enabled: true
+redirect_from: "/posts/"
 ---
+
+<div class="posts index">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h2 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+    <p class="post-date"><small >{{ post.desc }}</small></p>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+  <a class="pagination-item older" href="/page/{{paginator.next_page}}">Older</a>
+  {% else %}
+  <span class="pagination-item older">Older</span>
+  {% endif %} {% if paginator.previous_page %} {% if paginator.page == 2 %}
+  <a class="pagination-item newer" href="/">Newer</a>
+  {% else %}
+  <a class="pagination-item newer" href="/page/{{paginator.previous_page}}">Newer</a>
+  {% endif %} {% else %}
+  <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
