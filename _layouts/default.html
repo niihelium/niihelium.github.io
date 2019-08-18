@@ -1,12 +1,19 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    {% include nav.html %}
-    {{ content }}
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Sans:400,300,700" type="text/css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  {% include nav.html %}
+  <div class="content">
+      {{ content }}
+  </div>
+</body>
+
 </html>

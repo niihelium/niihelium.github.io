@@ -1,3 +1,87 @@
-.current {
-    color: green;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Roboto Sans", sans-serif;
+}
+
+$header-text: #ccc;
+$header-text-visited: #aaa;
+$a-green: #48b983;
+
+a,
+a:visited {
+  color: $header-text;
+}
+
+a:hover {
+  color: $a-green;
+}
+
+a.current {
+  color: $a-green;
+}
+
+header {
+  padding: 30px;
+  background: rgb(24, 23, 24);
+  width: 100%;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header span {
+  display: block;
+  color: $header-text;
+  margin-bottom: 15px;
+}
+
+header a,
+a:visited {
+  text-decoration: none;
+}
+
+header a:hover {
+  color: $a-green;
+}
+
+header h1 a:hover {
+  text-decoration: none;
+}
+
+.content {
+  padding: 30px;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.content li {
+  margin-bottom: 15px;
+}
+
+.content .date {
+  display: block;
+}
+
+.content a {
+  color: #48b983;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.content p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

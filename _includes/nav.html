@@ -1,5 +1,11 @@
-<nav>
-        {% for item in site.data.nav %}
-          <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-        {% endfor %}
-      </nav>
+<header>
+  <h1><a href="/">Nikita Unkovsky</a></h1>
+  <span>Physicist | Software Developer</span>
+  
+
+  <nav>
+    {% for item in site.data.nav %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+</header>
