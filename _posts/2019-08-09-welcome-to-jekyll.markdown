@@ -25,6 +25,18 @@ interface MyService {
 }
 ```
 
+... a given wire happens to be carrying "$\lvert 0\rangle$."
+By that we mean that it's carrying the linear combination
+$\begin{smallmatrix} 1&0 \end{smallmatrix}$
+$$
+\begin{align}
+  \nabla\times\vec{\mathbf{B}}-\frac{1}{c}\frac{\partial\vec{\mathbf{E}}}{\partial t} &= \frac{4\pi}{c}\vec{\mathbf{j}} \\
+  \nabla\cdot\vec{\mathbf{E}} &= 4\pi\rho \\
+  \nabla\times\vec{\mathbf{E}}+\frac{1}{c}\frac{\partial\vec{\mathbf{B}}}{\partial t} &= \vec{\mathbf{0}} \\
+  \nabla\cdot\vec{\mathbf{B}} &= 0
+\end{align}
+$$
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
